@@ -38,3 +38,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT substr(c14, 1, 4) as YEAR,  count(*) as CANT FROM tbl1 GROUP BY substr(c14, 1, 4) HAVING YEAR='2018'
